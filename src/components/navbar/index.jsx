@@ -13,9 +13,9 @@ function Navbar({ sidebarOpen, setSidebarOpen }) {
     }
     const openStyle = sidebarOpen ? openStyleButton : {};
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
             <div className="container-fluid">
-                <button type="button" className="btn btn-dark" onClick={manageSidebar} style={{...openStyle, transition: "all 0.3s linear"}}>
+                <button type="button" className="btn btn-secondary" onClick={manageSidebar} style={{...openStyle, transition: "all 0.3s linear"}}>
                 <img src={ArrowRight} alt="Home" />
             </button>
             <NavLink className="navbar-brand" to="/">

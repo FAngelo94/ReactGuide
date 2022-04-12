@@ -1,13 +1,25 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
+const buildList = (page, list) => {
+    return list.map((hook, index) => {
+        return (<li key={React.useId()}>
+            <NavLink className={page!==hook ? `link-light` : `link-warning`} to={`/${hook}`}>
+                {hook}
+            </NavLink>
+        </li>);
+    });
+}
 
 function Sidebar({ sidebarOpen }) {
     const open = sidebarOpen ? { marginLeft: "0px" } : { marginLeft: "-280px" };
+
+    const location = useLocation();
+    const page = location.pathname.split("/")[1];
+
     return (
-        <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100" style={{ ...open, width: "280px", transition: "all 0.3s linear" }}>
-            <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <span className="fs-4">Index</span>
-            </a>
+        <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-secondary h-100" style={{ ...open, width: "280px", transition: "all 0.3s linear" }}>
+                <span className="fs-4 w-100 text-center">Index</span>
             <hr />
             <ul className="nav nav-pills flex-column mb-auto ms-2">
                 <li className="mb-1 ">
@@ -17,13 +29,16 @@ function Sidebar({ sidebarOpen }) {
                     <div className="collapse show" id="hooks-collapse">
                         <ul className="btn-toggle-nav list-group-numbered fw-normal pb-1 small">
                             <h6>Basic</h6>
-                            <li><NavLink className="link-warning" to="/">
-                                UseState
-                            </NavLink>
-                            </li>
-                            <li><NavLink className="link-light" to="/">
-                                UseEffect
-                            </NavLink></li>
+                            {buildList(page, ["useState", "useEffect", "useContext"])}
+                        </ul>
+                        <ul className="btn-toggle-nav list-group-numbered fw-normal pb-1 small">
+                            <h6>Additional Hooks</h6>
+                            {buildList(page, ["useReducer", "useCallback", "useMemo", "useRef", "useImperativeHandle", "useLayoutEffect", "useDebugValue", "useDeferredValue", "useTransition", "useId"])}
+                        </ul>
+                        <ul className="btn-toggle-nav list-group-numbered fw-normal pb-1 small">
+                            <h6>Library Hooks</h6>
+                            {buildList(page, ["useSyncExternalStore", "useInsertionEffect"])
+                            }
                         </ul>
                     </div>
                 </li>

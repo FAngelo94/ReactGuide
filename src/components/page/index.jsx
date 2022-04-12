@@ -6,7 +6,7 @@ function Page({ children }) {
     const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
     return (
-        <div className="vh-100 d-flex flex-column">
+        <div className="vh-100 d-flex flex-column bg-dark text-white">
             <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
             <div className="d-flex h-100">
             <Sidebar sidebarOpen={sidebarOpen} />                

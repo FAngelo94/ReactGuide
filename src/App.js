@@ -7,15 +7,17 @@ import {
   Link
 } from "react-router-dom";
 import Home from './pages/home';
+import UseState from './pages/useState';
 
 function App() {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route exact path="/UseState" element={<UseState />} />
+      </Routes>
     </Router>
   );
 }
