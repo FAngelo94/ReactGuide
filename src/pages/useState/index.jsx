@@ -1,19 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Page from "../../components/page"
 import CodeBlock from "../../components/codeBlock";
+import SimpleCase from './demos/simpleCase';
+import FormCase from './demos/formCase';
 
 function UseState() {
-  const [state, setState] = React.useState(0);
-  console.log(state)
-  useEffect(() => {
-    setState(1)
-    setState(2)
-  }, []);
 
   return (
     <Page>
       <h1 className="text-center mt-4">useState</h1>
-      <h3>Teoria</h3>
+      <h3 className='text-success'>Teoria</h3>
       <CodeBlock
         text={"const [state, setState] = useState(initialState);"}
       />
@@ -63,7 +59,12 @@ function UseState() {
       <p>Se aggiorno più stati in contemporanea all'interno di un componente React cerca di accorpare tutte le modifiche in un unico render in modo da ottimizzare l'Aggiornamento dell'applicazione</p>
       <p>Nel caso in cui invece si voglia forzare un rendering syncrono, evitando di aggiornare più stati in maniera asincrona nello stesso rendering, siò usare la funzione <code>flushSync</code> che però rallenterà le performance</p>
 
-      <h3>Pratica e Demo</h3>
+      <h3 className='text-warning'>Pratica e Demo</h3>
+      <p>Clicca sul titolo di ciascun esempio per essere reindirizzato al codice su github</p>
+      <SimpleCase />
+      <FormCase />
+
+      <h3 className="text-danger">Errori Comuni</h3>
     </Page>
   );
 }
