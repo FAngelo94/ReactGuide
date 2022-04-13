@@ -61,7 +61,13 @@ function UseState() {
 
       <h3 className='text-warning'>Pratica e Demo</h3>
       <p>Clicca sul titolo di ciascun esempio per essere reindirizzato al codice su github</p>
+      
+      <h5><a href="https://github.com/FAngelo94/ReactGuide/tree/main/src/pages/useState/femos/dimpleCase.jsx" class="link-primary" target="_blank">Caso Semplice</a></h5>
+            <p>Esempio semplice con un contatore e 2 pulsanti che aggiornano lo stato aumentando o diminuendo la variabile di 1</p>
       <SimpleCase />
+
+      <h5><a href="https://github.com/FAngelo94/ReactGuide/tree/main/src/pages/useState/demos/formCase.jsx" class="link-primary" target="_blank">Gestione di un Form con più campi</a></h5>
+            <p>Creare uno <code>useState</code> per ogni campo in caso di form complessi può portare ad avere una lunga lista di variabili che rende il codice meno leggibile. In questi casi una soluzione può essere quella di avere un oggetto come stato dove ogni chiave dell'oggetto rappresenta il valore di un campo del form come in questo esempio:</p>
       <FormCase />
 
       <h3 className="text-danger">Errori Comuni</h3>
