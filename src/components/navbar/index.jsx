@@ -13,7 +13,7 @@ function Navbar({ sidebarOpen, setSidebarOpen }) {
     }
     const openStyle = sidebarOpen ? openStyleButton : {};
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-secondary position-fixed w-100">
             <div className="container-fluid">
                 <button type="button" className="btn btn-secondary" onClick={manageSidebar} style={{...openStyle, transition: "all 0.3s linear"}}>
                 <img src={ArrowRight} alt="Home" />

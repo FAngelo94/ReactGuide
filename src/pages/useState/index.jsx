@@ -12,7 +12,7 @@ function UseState() {
 
   return (
     <Page>
-      <h1 className="text-center">useState</h1>
+      <h1 className="text-center mt-4">useState</h1>
       <h3>Teoria</h3>
       <CodeBlock
         text={"const [state, setState] = useState(initialState);"}
