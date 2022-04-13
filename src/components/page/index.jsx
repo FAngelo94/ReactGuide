@@ -8,7 +8,7 @@ function Page({ children }) {
     return (
         <div className="vh-100 d-flex flex-column bg-dark text-white">
             <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
-            <div className="d-flex h-100">
+            <div className="d-flex bg-dark">
             <Sidebar sidebarOpen={sidebarOpen} />                
             <div className="container">
                 {children}
