@@ -18,7 +18,7 @@ function Sidebar({ sidebarOpen }) {
     const page = location.pathname.split("/")[1];
 
     return (
-        <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-secondary h-100 position-fixed" style={{ ...open, width: "280px", transition: "all 0.3s linear" }}>
+        <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-secondary h-100 position-fixed" style={{ ...open, width: "280px", transition: "all 0.3s linear", zIndex: "1" }}>
                 <span className="fs-4 w-100 text-center">Indice</span>
             <hr />
             <ul className="nav nav-pills flex-column mb-auto ms-2">

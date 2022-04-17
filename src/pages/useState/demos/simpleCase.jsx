@@ -7,8 +7,8 @@ function SimpleCase() {
             
             <p className="text-center">Stato={state}</p>
             <div className="d-flex flex-wrap">
-                <button type="button" class="btn btn-secondary flex-grow-1 me-3" onClick={() => setState(prevState => prevState + 1)}>+</button>
-                <button type="button" class="btn btn-secondary flex-grow-1" onClick={() => setState(prevState => prevState - 1)}>-</button>
+                <button type="button" className="btn btn-secondary flex-grow-1 me-3" onClick={() => setState(prevState => prevState + 1)}>+</button>
+                <button type="button" className="btn btn-secondary flex-grow-1" onClick={() => setState(prevState => prevState - 1)}>-</button>
             </div>
         </React.Fragment>
     );

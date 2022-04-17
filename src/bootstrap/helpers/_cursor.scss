@@ -1,0 +1,11 @@
+$cursors: (
+  pointer,
+  none
+) !default;
+
+
+@each $var in $cursors {
+    .cursor-#{$var} {
+        cursor: $var;
+    }
+}
