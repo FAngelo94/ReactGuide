@@ -5,11 +5,11 @@ import FormCase from './demos/formCase';
 import MultipleUpdate from './errors/multipleUpdates';
 import PageHook from "../../../components/pageHook"
 
-function UseState() {
+function UseReducer() {
 
   return (
     <PageHook
-      title={"useState"}
+      title={"useReducer"}
       theory={
         <React.Fragment>
 
@@ -29,4 +29,4 @@ function UseState() {
   );
 }
 
-export default UseState;
+export default UseReducer;

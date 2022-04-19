@@ -5,11 +5,11 @@ import FormCase from './demos/formCase';
 import MultipleUpdate from './errors/multipleUpdates';
 import PageHook from "../../../components/pageHook"
 
-function UseState() {
+function UseDebugValue() {
 
   return (
     <PageHook
-      title={"useState"}
+      title={"useDebugValue"}
       theory={
         <React.Fragment>
 
@@ -29,4 +29,4 @@ function UseState() {
   );
 }
 
-export default UseState;
+export default UseDebugValue;
