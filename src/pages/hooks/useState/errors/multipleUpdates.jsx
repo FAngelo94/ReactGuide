@@ -1,5 +1,5 @@
 import React from "react";
-import CodeBlock from "../../../components/codeBlock";
+import CodeBlock from "../../../../components/codeBlock";
 
 function MultipleUpdate() {
     const [state, setState] = React.useState(0);
