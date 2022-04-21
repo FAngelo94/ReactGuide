@@ -18,7 +18,7 @@ function Navbar({ sidebarOpen, setSidebarOpen }) {
                 <button type="button" className="btn btn-secondary" onClick={manageSidebar} style={{...openStyle, transition: "all 0.3s linear"}}>
                 <img src={ArrowRight} alt="Home" />
             </button>
-            <NavLink className="navbar-brand" to="/">
+            <NavLink className="navbar-brand" to="/ReactGuide/">
                 <img src={House} alt="Home" />
             </NavLink>
             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">

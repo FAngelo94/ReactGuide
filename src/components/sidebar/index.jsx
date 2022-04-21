@@ -4,7 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 const buildList = (page, list) => {
     return list.map((hook, index) => {
         return (<li key={React.useId()}>
-            <NavLink className={page!==hook ? `link-light` : `link-warning`} to={`/${hook}`}>
+            <NavLink className={page!==hook ? `link-light` : `link-warning`} to={`/ReactGuide/${hook}`}>
                 {hook}
             </NavLink>
         </li>);

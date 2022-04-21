@@ -27,22 +27,22 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/UseState" element={<UseState />} />
-        <Route path="/UseEffect" element={<UseEffect />} />
-        <Route path="/UseCallback" element={<UseCallback />} />
-        <Route path="/UseMemo" element={<UseMemo />} />
-        <Route path="/UseRef" element={<UseRef />} />
-        <Route path="/UseContext" element={<UseContext />} />
-        <Route path="/UseReducer" element={<UseReducer />} />
-        <Route path="/UseDebugValue" element={<UseDebugValue />} />
-        <Route path="/UseDeferredValue" element={<UseDeferredValue />} />
-        <Route path="/useId" element={<UseId />} />
-        <Route path="/useImperativeHandle" element={<UseImperativeHandle />} />
-        <Route path="/useInsertionEffect" element={<UseInsertionEffect />} />
-        <Route path="/useLayoutEffect" element={<UseLayoutEffect />} />
-        <Route path="/useSyncExternalStore" element={<UseSyncExternalStore />} />
-        <Route path="/useTransition" element={<UseTransition />} /> 
+        <Route exact path="/ReactGuide/" element={<Home />} />
+        <Route path="/ReactGuide/UseState" element={<UseState />} />
+        <Route path="/ReactGuide/UseEffect" element={<UseEffect />} />
+        <Route path="/ReactGuide/UseCallback" element={<UseCallback />} />
+        <Route path="/ReactGuide/UseMemo" element={<UseMemo />} />
+        <Route path="/ReactGuide/UseRef" element={<UseRef />} />
+        <Route path="/ReactGuide/UseContext" element={<UseContext />} />
+        <Route path="/ReactGuide/UseReducer" element={<UseReducer />} />
+        <Route path="/ReactGuide/UseDebugValue" element={<UseDebugValue />} />
+        <Route path="/ReactGuide/UseDeferredValue" element={<UseDeferredValue />} />
+        <Route path="/ReactGuide/useId" element={<UseId />} />
+        <Route path="/ReactGuide/useImperativeHandle" element={<UseImperativeHandle />} />
+        <Route path="/ReactGuide/useInsertionEffect" element={<UseInsertionEffect />} />
+        <Route path="/ReactGuide/useLayoutEffect" element={<UseLayoutEffect />} />
+        <Route path="/ReactGuide/useSyncExternalStore" element={<UseSyncExternalStore />} />
+        <Route path="/ReactGuide/useTransition" element={<UseTransition />} /> 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
