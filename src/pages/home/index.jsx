@@ -4,7 +4,7 @@ import Page from "../../components/page"
 function Home() {
   return (
     <Page>
-        Home
+        <h1 className="text-center mt-4">Guida React</h1>
     </Page>
   );
 }

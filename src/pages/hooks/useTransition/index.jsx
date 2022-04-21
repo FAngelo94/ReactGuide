@@ -1,8 +1,6 @@
 import React from 'react';
 import CodeBlock from "../../../components/codeBlock";
-import SimpleCase from './demos/simpleCase';
-import FormCase from './demos/formCase';
-import MultipleUpdate from './errors/multipleUpdates';
+
 import PageHook from "../../../components/pageHook"
 
 function UseTransition() {
