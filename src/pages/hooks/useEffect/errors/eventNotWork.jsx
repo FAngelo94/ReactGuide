@@ -1,5 +1,5 @@
 import React from "react";
-function InfiniteUpdate() {
+function EventNotWork() {
 
     return (
         <React.Fragment>
@@ -8,4 +8,4 @@ function InfiniteUpdate() {
     );
 }
 
-export default InfiniteUpdate;
+export default EventNotWork;
