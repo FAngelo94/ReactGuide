@@ -4,7 +4,11 @@ import Page from "../../components/page"
 function Home() {
   return (
     <Page>
-        <h1 className="text-center mt-4">Guida React</h1>
+      <div className="text-center mt-4">
+        <h1>Guida React</h1>
+        <p>Semplice guida fatta per hobby con tanto di esempi per ciascun hooks di React</p>
+        <h4>Il sito è ancora in costruzione!</h4>
+      </div>
     </Page>
   );
 }
