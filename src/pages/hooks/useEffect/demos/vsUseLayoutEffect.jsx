@@ -2,57 +2,19 @@
 
 import React from "react";
 function VsUseLayoutEffect() {
-    const [value, setValue] = React.useState(0);
-    const [value2, setValue2] = React.useState(0);
-    const boxRef = React.useRef(null);
-    const boxRef2 = React.useRef(null);
-    const inputRef = React.useRef(null);
-    const inputRef2 = React.useRef(null);
-    console.log("Rendering...");
-
-    React.useLayoutEffect(() => {
-        console.log("useLayoutEffect");
-        if (value > 0) {
-            let c = 0
-            for (let i = 0; i < 5000000000; i++)
-                c++;
-            boxRef.current.style.transform = "rotate(" + (value * 3) + "deg)";
-        }
-    }, [value]);
-
-    React.useEffect(() => {
-        console.log("useEffect");
-        if (value2 > 0) {
-            let c = 0
-            for (let i = 0; i < 5000000000; i++)
-                c++;
-            boxRef2.current.style.transform = "rotate(" + (value2 * 3) + "deg)";
-        }
-    }, [value2]);
 
     return (
-        <div className="row">
-            <div className="col p-3 d-flex flex-column justify-content-between align-items-center w-100" style={{ height: "270px", background: "grey" }}>
-                <p className="m-1 fw-bold">Usando useLayoutEffect</p>
-                <div ref={boxRef} style={{ transform: "rotate(" + value + "deg)", width: "100px", height: "100px", background: "white" }}>
-                    <div style={{ width: "25px", height: "25px", background: "red" }}>
-                    </div>
-
-                </div>
-                <input type="number" ref={inputRef} defaultValue={value} />
-                <button className="btn btn-secondary w-100 btn-sm mt-2" onClick={() => setValue(inputRef.current.value)}>Rotate</button>
-            </div>
-            <div className="col p-3 d-flex flex-column justify-content-between align-items-center w-100" style={{ height: "270px", background: "grey" }}>
-                <p className="m-1 fw-bold">Usando useEffect</p>
-
-                <div ref={boxRef2} style={{ transform: "rotate(" + value2 + "deg)", width: "100px", height: "100px", background: "white" }}>
-                    <div style={{ width: "25px", height: "25px", background: "red" }}>
-                    </div>
-                </div>
-                <input type="number" ref={inputRef2} defaultValue={value2} />
-                <button className="btn btn-secondary w-100 btn-sm mt-2" onClick={() => setValue2(inputRef2.current.value)}>Rotate</button>
-            </div>
-        </div>
+        <React.Fragment>
+            <h5 className='mt-3'>Differenza con useLayoutEffect</h5>
+            <p>Questo è un esempio pratico in cui si nota la differenza. Di base all'interno di entrabi gli effetti modifichiamo la rotazione del componente effettando di fatto una modifica al DOM.</p>
+            <p>Nel caso del <code>useLayoutEffect</code> notiamo che la grafica viene aggiornata soltanto una volta perché il codice all'interno viene eseguito prima che React disegni la grafica</p>
+            <p>Nel caso del <code>useEffect</code> invece vediamo la grafica cambiare perché il codice all'interno dello <code>useEffect</code> viene eseguito dopo che React disegna la grafica</p>
+            <iframe height="350" style={{ width: "100%" }} scrolling="no" title="Super Stupid useEffect vs useLayoutEffect Example" src="https://codepen.io/FAngelo94/embed/ExQxveG?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/FAngelo94/pen/ExQxveG">
+                    Super Stupid useEffect vs useLayoutEffect Example</a> by Angelo Falci (<a href="https://codepen.io/FAngelo94">@FAngelo94</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+        </React.Fragment>
     );
 }
 

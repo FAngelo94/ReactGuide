@@ -1,20 +1,15 @@
 import React from "react";
 function SimpleCase() {
 
-    const [count, setCount] = React.useState(0);
-    const [countPower, setCountPower] = React.useState(0);
-
-    React.useEffect(() => {
-        setCountPower(count ** 2);
-    }, [count])
-
     return (
         <React.Fragment>
-            <div className="d-flex justify-content-around">
-                <p className="text-center">Count={count}</p>
-                <p className="text-center">Count power={countPower}</p>
-            </div>
-            <button type="button" className="btn btn-secondary btn-sm w-100" onClick={() => setCount(prevState => prevState + 1)}>+</button>
+            <h5 className='mt-3'>Caso semplice</h5>
+            <p>Esempio semplice di <code>useEffect</code> triggerato dalla modifica della variabile <code>Count</code> che causa la modifica della variabile <code>Count power</code></p>
+            <iframe height="300" style={{width: "100%"}} scrolling="no" title="useEffect vs useLayoutEffect" src="https://codepen.io/FAngelo94/embed/jOZOLjZ?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/FAngelo94/pen/jOZOLjZ">
+                    useEffect vs useLayoutEffect</a> by Angelo Falci (<a href="https://codepen.io/FAngelo94">@FAngelo94</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+            </iframe> 
         </React.Fragment>
     );
 }

@@ -1,15 +1,14 @@
 import React from "react";
 function SimpleCase() {
-    const [state, setState] = React.useState(0);
-
     return (
         <React.Fragment>
-            
-            <p className="text-center">Stato={state}</p>
-            <div className="d-flex flex-wrap">
-                <button type="button" className="btn btn-secondary flex-grow-1 me-3" onClick={() => setState(prevState => prevState + 1)}>+</button>
-                <button type="button" className="btn btn-secondary flex-grow-1" onClick={() => setState(prevState => prevState - 1)}>-</button>
-            </div>
+            <h5>Caso Semplice</h5>
+            <p>Esempio semplice con un contatore e 2 pulsanti che aggiornano lo stato aumentando o diminuendo la variabile di 1</p>
+            <iframe height="300" style={{ width: "100%" }} scrolling="no" title="useEffect - error - infinite update" src="https://codepen.io/FAngelo94/embed/gOvOeWQ?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/FAngelo94/pen/gOvOeWQ">
+                    useEffect - error - infinite update</a> by Angelo Falci (<a href="https://codepen.io/FAngelo94">@FAngelo94</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
         </React.Fragment>
     );
 }

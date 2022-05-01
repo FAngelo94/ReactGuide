@@ -55,25 +55,18 @@ function UseEffect() {
       }
       demos={
         <React.Fragment>
-          <h5 className='mt-3'><a href="https://github.com/FAngelo94/ReactGuide/tree/main/src/pages/useEffect/demos/simpleCase.jsx" className="link-primary" target="_blank" rel="noreferrer">Caso semplice</a></h5>
-          <p>Esempio semplice di <code>useEffect</code> triggerato dalla modifica della variabile <code>Count</code> che causa la modifica della variabile <code>Count power</code></p>
+          
           <SimpleCase />
 
-          <h5 className='mt-3'><a href="https://github.com/FAngelo94/ReactGuide/tree/main/src/pages/useEffect/demos/cleanCase.jsx" className="link-primary" target="_blank" rel="noreferrer">Esempio di useEffect ripulito</a></h5>
-          <p>In questo caso ad ogni click viene triggerato un nuovo render e all'interno di 2 useEffect different andiamo ad incrementare 2 variabili, <code>effectWithClean</code> e <code>effectWithoutClean</code>. Tuttavia solo quest'ultima viene realmente incrementata perché, a scopo di esempio, nel primo <code>useEffect</code> andiamo a settare la variabile <code>effectWithClean</code> a 0 nel return.</p>
           <CleanCase />
 
-          <h5 className='mt-3'><a href="https://github.com/FAngelo94/ReactGuide/tree/main/src/pages/useEffect/demos/vsUseLayoutEffect.jsx" className="link-primary" target="_blank" rel="noreferrer">Differenza con useLayoutEffect</a></h5>
           <VsUseLayoutEffect />
 
         </React.Fragment>
       }
       errors={
         <React.Fragment>
-          <h5><a href="https://github.com/FAngelo94/ReactGuide/tree/main/src/pages/useEffect/demos/eventNotWork.jsx" className="link-primary" target="_blank" rel="noreferrer">L'evento non funziona</a></h5>
           <EventNotWork />
-
-          <h5><a href="https://github.com/FAngelo94/ReactGuide/tree/main/src/pages/useEffect/demos/infiniteUpdate.jsx" className="link-primary" target="_blank" rel="noreferrer">Aggiornamento infinito</a></h5>
           <InfiniteUpdate />
         </React.Fragment>
       }
