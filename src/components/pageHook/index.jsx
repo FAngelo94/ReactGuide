@@ -19,11 +19,11 @@ function PageHook({title, theory, demos, errors}) {
         children={demos}
       />
 
-      <CollapseContainer
+      {errors && <CollapseContainer
         label={"Errori Comuni"}
         type="text-danger"
         children={errors}
-      />
+      />}
     </Page>
   );
 }
