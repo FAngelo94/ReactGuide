@@ -8,6 +8,8 @@ import EventNotWork from './errors/eventNotWork';
 import InfiniteUpdate from './errors/infiniteUpdate';
 
 function UseEffect() {
+  //TODO: add errors
+  // Errori comuni: https://blog.logrocket.com/solve-react-useeffect-hook-infinite-loop-patterns/
 
   return (
     <PageHook
