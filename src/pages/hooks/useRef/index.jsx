@@ -18,6 +18,7 @@ function UseRef() {
   const refContainer = useRef(initialValue);`
             } />
           <p>Grazie a questo hook possiamo accedere in maniera "imperativa" ad un componente del DOM. Per fare ciò, come si vedrà meglio negli esempi, si crea una variabille (come nel codice sopra) e la sia assegna al componente grafico del quale vogliamo un accesso diretto.</p>
+          <p>Possiamo sfruttare questo hook anche per salvare una variabile che non vogliamo cambi con i successivi render e, se modificata, non triggeri un nuovo render.</p>
         </React.Fragment>
       }
       demos={
