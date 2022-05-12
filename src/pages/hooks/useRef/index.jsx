@@ -24,7 +24,7 @@ function UseRef() {
       demos={
         <React.Fragment>
           <SimpleCase />
-          <MutableValues/>
+          <MutableValues />
           <UncontrolledFields />
         </React.Fragment>
       }
