@@ -1,6 +1,6 @@
 import React from 'react';
 import CodeBlock from "../../../components/codeBlock";
-
+import SimpleCase from './demos/simpleCase';
 import PageHook from "../../../components/pageHook"
 
 function UseTransition() {
@@ -15,7 +15,7 @@ function UseTransition() {
       }
       demos={
         <React.Fragment>
-          
+          <SimpleCase />
         </React.Fragment>
       }
       errors={

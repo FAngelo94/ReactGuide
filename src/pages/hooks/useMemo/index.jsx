@@ -2,6 +2,7 @@ import React from 'react';
 import CodeBlock from "../../../components/codeBlock";
 
 import PageHook from "../../../components/pageHook"
+import MemoizeComponent from './demos/memoizeComponent';
 import SimpleCase from './demos/simpleCase';
 
 function UseMemo() {
@@ -22,6 +23,7 @@ function UseMemo() {
       demos={
         <React.Fragment>
           <SimpleCase />
+          <MemoizeComponent />
         </React.Fragment>
       }
       errors={

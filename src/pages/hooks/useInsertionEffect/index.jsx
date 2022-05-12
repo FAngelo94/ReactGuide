@@ -2,6 +2,7 @@ import React from 'react';
 import CodeBlock from "../../../components/codeBlock";
 
 import PageHook from "../../../components/pageHook"
+import SimpleCase from './demos/simpleCase';
 
 function UseInsertionEffect() {
 
@@ -15,7 +16,7 @@ function UseInsertionEffect() {
       }
       demos={
         <React.Fragment>
-          
+          <SimpleCase />
         </React.Fragment>
       }
       errors={
