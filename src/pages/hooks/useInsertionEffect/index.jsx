@@ -11,7 +11,8 @@ function UseInsertionEffect() {
       title={"useInsertionEffect"}
       theory={
         <React.Fragment>
-
+          <p>Questo hook è identico a <code>useEffect</code> o <code>useLayoutEffect</code> con l'unica differenza che si attiva in modo sincrono prima di tutte le mutazioni DOM, quindi prima degli altri tipi di "Effect".</p>
+          <p><code>useInsertionEffect</code> dovrebbe essere limitato per la modifica del css-in-js come con la libreria <code>StyledComponent</code>. Preferire useEffect o useLayoutEffect per il resto.</p>
         </React.Fragment>
       }
       demos={

@@ -10,7 +10,11 @@ function UseTransition() {
       title={"useTransition"}
       theory={
         <React.Fragment>
-
+          <CodeBlock
+          text={`const [isPending, startTransition] = useTransition();`}
+           />
+          <p>Questo hook restutiusce un valore che identifica se lo stato della transizione è in corso e una funzione per avviarla.</p>
+          <p>L'esempio è più chiaro di qualsiasi altra spiegazione</p>
         </React.Fragment>
       }
       demos={
