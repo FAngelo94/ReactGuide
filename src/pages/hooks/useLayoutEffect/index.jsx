@@ -1,6 +1,4 @@
 import React from 'react';
-import CodeBlock from "../../../components/codeBlock";
-
 import PageHook from "../../../components/pageHook"
 import VsUseLayoutEffect from './demos/vsUseLayoutEffect';
 

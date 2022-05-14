@@ -1,5 +1,4 @@
 import React from "react";
-import CodeBlock from "../../../../components/codeBlock";
 
 function WithUseMemo() {
     return (
