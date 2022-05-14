@@ -1,5 +1,6 @@
 import React from 'react';
 import Page from "../../components/page"
+import logo from "./logo.png"
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <p>Se vuoi scrivermi questo è il mio profilo linkedin: <a className='link-warning' href='https://www.linkedin.com/in/angelo-falci-1292ab76/'> Profilo</a></p>
         <p>Se hai apprezzato il lavoro e vuoi offrirmi un caffé: <a className='link-warning' href={"https://paypal.me/fangelo94?country.x=IT&locale.x=it_IT"} target="_blank" rel="noreferrer">☕
         </a></p>
+        <img src={logo} alt="logo" className="w-25" />
       </div>
     </Page>
   );
