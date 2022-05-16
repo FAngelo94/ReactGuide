@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactGuide/static/css/main.9ec73279.css",
-    "main.js": "/ReactGuide/static/js/main.c7fa75d4.js",
+    "main.css": "/ReactGuide/static/css/main.320ae6cf.css",
+    "main.js": "/ReactGuide/static/js/main.bc51ca86.js",
     "react-syntax-highlighter/refractor-core-import.js": "/ReactGuide/static/js/react-syntax-highlighter/refractor-core-import.e90061d6.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/ReactGuide/static/js/react-syntax-highlighter_languages_refractor_abap.bdd03845.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/ReactGuide/static/js/react-syntax-highlighter_languages_refractor_actionscript.e69b05b6.chunk.js",
@@ -156,10 +156,10 @@
     "react-syntax-highlighter_languages_refractor_yaml.js": "/ReactGuide/static/js/react-syntax-highlighter_languages_refractor_yaml.3ab330e6.chunk.js",
     "static/js/787.de610aa5.chunk.js": "/ReactGuide/static/js/787.de610aa5.chunk.js",
     "index.html": "/ReactGuide/index.html",
-    "static/media/house.svg": "/ReactGuide/static/media/house.a13fed2c15ce13f07579b1e9d1d9143f.svg",
+    "static/media/house.svg": "/ReactGuide/static/media/house.266298a7c1100c5ad738928919906c22.svg",
     "static/media/arrow-right-square.svg": "/ReactGuide/static/media/arrow-right-square.5fa34f00e830e71bb0208326496051df.svg",
-    "main.9ec73279.css.map": "/ReactGuide/static/css/main.9ec73279.css.map",
-    "main.c7fa75d4.js.map": "/ReactGuide/static/js/main.c7fa75d4.js.map",
+    "main.320ae6cf.css.map": "/ReactGuide/static/css/main.320ae6cf.css.map",
+    "main.bc51ca86.js.map": "/ReactGuide/static/js/main.bc51ca86.js.map",
     "refractor-core-import.e90061d6.chunk.js.map": "/ReactGuide/static/js/react-syntax-highlighter/refractor-core-import.e90061d6.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.bdd03845.chunk.js.map": "/ReactGuide/static/js/react-syntax-highlighter_languages_refractor_abap.bdd03845.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.e69b05b6.chunk.js.map": "/ReactGuide/static/js/react-syntax-highlighter_languages_refractor_actionscript.e69b05b6.chunk.js.map",
@@ -315,7 +315,7 @@
     "787.de610aa5.chunk.js.map": "/ReactGuide/static/js/787.de610aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ec73279.css",
-    "static/js/main.c7fa75d4.js"
+    "static/css/main.320ae6cf.css",
+    "static/js/main.bc51ca86.js"
   ]
 }
