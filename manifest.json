@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Guide",
+  "name": "React Guide with Codepen examples",
   "icons": [
     {
       "src": "favicon.ico",
