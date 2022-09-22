@@ -2,6 +2,7 @@ import React from 'react';
 import CodeBlock from "../../../components/codeBlock";
 import SimpleCase from './demos/simpleCase';
 import FormCase from './demos/formCase';
+import VsUseRef from './demos/vsUseRef';
 import MultipleUpdate from './errors/multipleUpdates';
 import PageHook from "../../../components/pageHook"
 
@@ -63,6 +64,7 @@ return initialState;
       demos={<React.Fragment>
         <SimpleCase />
         <FormCase />
+        <VsUseRef />
       </React.Fragment>}
 
       errors={<React.Fragment>

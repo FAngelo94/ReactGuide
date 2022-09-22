@@ -4,6 +4,7 @@ import CodeBlock from "../../../components/codeBlock";
 import PageHook from "../../../components/pageHook"
 import MutableValues from './demos/mutableValues';
 import SimpleCase from './demos/simpleCase';
+import VsUseState from './demos/vsUseState';
 import UncontrolledFields from './demos/uncontrolledFields';
 
 function UseRef() {
@@ -26,6 +27,7 @@ function UseRef() {
           <SimpleCase />
           <MutableValues />
           <UncontrolledFields />
+          <VsUseState />
         </React.Fragment>
       }
       errors={
